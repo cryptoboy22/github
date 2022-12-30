@@ -3,7 +3,7 @@
 ##Automation of dotfiles back-up to github
 terminator \
 ##Send notification
-notify-send "Backing up Systems in 30m"
+#notify-send "Backing up Systems in 30m"
 #sleep 30m
 
 ## Copy dotfiles  ##
@@ -15,20 +15,19 @@ rsync -a $HOME/scripts/* $HOME/github/scripts/
 rsync -a $HOME/.config/waybar/* $HOME/github/dotconfig/waybar/
 
 #Sway
-rsync -a $HOME/.config/hyprland/* $HOME/github/dotconfig/hyprland/
+rsync -a $HOME/.config/hypr/* $HOME/github/dotconfig/hypr/
 
 #GTK
-rsync -a $HOME/.config/gtk-2.0/* $HOME/Nextcloud/dotconf/gtk2/
-rsync -a $HOME/.config/gtk-3.0/* $HOME/Nextcloud/dotconf/gtk3/
+rsync -a $HOME/.config/gtk-2.0/* $HOME/github/dotconfig/gtk2/
+rsync -a $HOME/.config/gtk-3.0/* $HOME/github/dotconfig/gtk3/
 pacman -Qqe > $HOME/github/pacman/installed_pkglist.txt
 #apache
 #rsync -a root@xpowx:/etc/http/conf/* $HOME/Nextcloud/dotconf/apache/
 cd $HOME/github/
-git add .
-git commit -m "updated packages"
+git push
 #postfix
 #rsync -a root@xpowxpi:/etc/postfix/* $HOME/Nextcloud/dotconf/postfix/
-
+exit 1
 #dovecot
 #rsync -a root@xpowxpi:/etc/dovecot/* $HOME/Nextcloud/dotconf/dovecot/
 
