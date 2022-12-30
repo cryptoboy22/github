@@ -1,0 +1,5 @@
+#!/bin/bash
+export SDL_VIDEODRIVER=wayland
+export MOZ_ENABLE_WAYLAND=1
+export GTK_THEME=Material-Black-Pistachio-4.0
+exec Hyprland

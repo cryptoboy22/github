@@ -1,0 +1,6 @@
+#!/bin/bash
+
+exec swayidle -w -d \
+        timeout 600 'swaync-client -d && swaylock -f -i $HOME/images/wallpaper/pexels-bob-clark-21492.jpg' \
+        timeout 1200 'systemctl suspend' \
+        unlock 'sleep 20 && swaync-client -d'

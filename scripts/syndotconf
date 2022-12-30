@@ -1,0 +1,44 @@
+#!/bin/bash
+
+##Automation of dotfiles back-up to github
+terminator \
+##Send notification
+notify-send "Backing up Systems in 30m"
+#sleep 30m
+
+## Copy dotfiles  ##
+
+#Scripts
+rsync -a $HOME/scripts/* $HOME/github/scripts/
+
+#Waybar
+rsync -a $HOME/.config/waybar/* $HOME/github/dotconfig/waybar/
+
+#Sway
+rsync -a $HOME/.config/hyprland/* $HOME/github/dotconfig/hyprland/
+
+#GTK
+rsync -a $HOME/.config/gtk-2.0/* $HOME/Nextcloud/dotconf/gtk2/
+rsync -a $HOME/.config/gtk-3.0/* $HOME/Nextcloud/dotconf/gtk3/
+pacman -Qqe > $HOME/github/pacman/installed_pkglist.txt
+#apache
+#rsync -a root@xpowx:/etc/http/conf/* $HOME/Nextcloud/dotconf/apache/
+cd $HOME/github/
+git add .
+git commit -m "updated packages"
+#postfix
+#rsync -a root@xpowxpi:/etc/postfix/* $HOME/Nextcloud/dotconf/postfix/
+
+#dovecot
+#rsync -a root@xpowxpi:/etc/dovecot/* $HOME/Nextcloud/dotconf/dovecot/
+
+#backup databases
+#rsync -a root@xpowx:/home/dav/nextcloud_backup/* $HOME/Nextcloud/dotconf/NCDB/
+
+#perge old database
+#ssh root@xpowxpi
+#cd /home/dav/nextcloud_backup
+#ls -t | sed -e '1,10d' | xargs -d '\n' rm
+#exit
+##Send notification
+#notify-send "Systems backed-up and cleaned"
