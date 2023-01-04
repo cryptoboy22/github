@@ -11,15 +11,16 @@ batsignal
 binutils
 bison
 bitwarden
+bleachbit
 blueman
 bluez
-brave-bin
 brightnessctl
 brother-mfc-j5320dw
 brscan4
 code
 dconf-editor
 dhcpcd
+dialog
 doublecmd-gtk2
 ecryptfs-utils
 efibootmgr
@@ -33,6 +34,7 @@ findutils
 fish
 fisher
 flex
+font-manager
 gawk
 gcc
 gedit
@@ -78,7 +80,6 @@ nano
 nano-syntax-highlighting
 ncdu
 neofetch
-nerd-fonts-complete
 net-tools
 network-manager-applet
 networkmanager-openvpn
@@ -104,6 +105,7 @@ polybar
 psuinfo
 pulseaudio-alsa
 py3status
+python-click-completion
 python-mpris2
 python-netifaces
 python-pip
@@ -120,6 +122,7 @@ seahorse
 sed
 slurp
 smartmontools
+starship
 strace
 sudo
 sway
@@ -139,6 +142,7 @@ ttf-dejavu
 ttf-hack
 ttf-ionicons
 ttf-ms-fonts
+ttf-nerd-fonts-symbols-1000-em
 tuna
 unzip
 waybar-hyprland
@@ -206,3 +210,5 @@ xterm
 yay
 ydotool
 zram-generator
+zsh-autosuggestions
+zsh-syntax-highlighting
