@@ -108,6 +108,7 @@ py3status
 python-click-completion
 python-mpris2
 python-netifaces
+python-pdftopng
 python-pip
 python-pydbus
 python-pytz
