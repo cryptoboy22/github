@@ -115,6 +115,7 @@ python-pytz
 python-pyudev
 realtime-privileges
 rofi
+rsync
 rt-tests
 rtirq
 sane
@@ -140,6 +141,7 @@ thunar
 tlp
 tlpui
 ttf-dejavu
+ttf-firacode-nerd
 ttf-hack
 ttf-ionicons
 ttf-ms-fonts
