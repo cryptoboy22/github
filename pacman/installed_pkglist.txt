@@ -1,6 +1,5 @@
 alsa-firmware
 alsa-utils
-arandr
 archlinux-keyring
 autoconf
 automake
