@@ -74,6 +74,7 @@ make
 mariadb
 mc
 meson
+min
 mpv
 nano
 nano-syntax-highlighting
