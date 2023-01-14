@@ -93,8 +93,6 @@ pamac-aur
 papirus-icon-theme
 patch
 pavucontrol
-php
-php-fpm
 picom
 pipewire
 pipewire-pulse
