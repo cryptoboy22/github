@@ -46,6 +46,7 @@ gparted
 grep
 grim
 groff
+grub
 gst-plugin-pipewire
 gthumb
 gzip
@@ -66,6 +67,8 @@ libtool
 light
 linux
 linux-firmware
+linux-zen
+linux-zen-headers
 lsof
 lxappearance
 lynx
